@@ -41,7 +41,7 @@ int TextDisplay::_putc(int value) {
 void TextDisplay::cls() {
     locate(0, 0);
     for(int i=0; i<columns()*rows(); i++) {
-        putc(' ');
+        _putc(' ');
     }
 }
 
